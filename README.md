@@ -8,6 +8,7 @@ The first topic to cover is the programming languages used, Json databases.
 in like the destinations, feedbacks and users with their information.
  
 Figure ‎0-1 The header Safer website.
+
 ![image](https://github.com/user-attachments/assets/532eeb1f-e691-44c4-8682-496a8704f29b)
 
 This is the header (top) of our website in all the pages the icons let us shuffle between the website pages home, destinations, feedback, pricing, log in and light-dark button respectively.
