@@ -24,6 +24,7 @@ Figure ‎4 3 part of the home page body.
 ![image](https://github.com/user-attachments/assets/0eab9d32-a96a-414c-9a62-40da47bf3b9a)
 
 In Figure ‎4 3 the home page we can scroll down to see information about the website here we can see our services we push read details to see the services that our website offer see Figure ‎4 4 we can scroll down also in here to see all details and information about Safer website.
+
 ![image](https://github.com/user-attachments/assets/7b129204-88db-4523-984b-0492add99b88)
 
 Figure ‎4 4 When push read details button, our services.
