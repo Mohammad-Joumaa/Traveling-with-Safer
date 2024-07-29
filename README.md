@@ -14,7 +14,7 @@ This is the header (top) of our website in all the pages the icons let us shuffl
 we will not be including it in the rest of the pictures but it is there.
 
  
-Figure ‎4 2 The head of the home page. 
+Figure ‎0-2 The head of the home page. 
 ![image](https://github.com/user-attachments/assets/bb497ca7-7b8f-4be5-9e10-452773a104f9)
 
 At first page Figure ‎0-2 is the home page in here we have the face of the website here we can switch between the pages using thew icons in the top of the page, From the destinations to the log in and other pages we can also choose between light and dark modes.
@@ -61,5 +61,6 @@ Figure ‎0-11 Insert feedback form and how the email will look.
 
  ![image](https://github.com/user-attachments/assets/1e661c2e-5a5d-46cd-9ec7-d828415b7740)
 
-Figure ‎0-12 prices page.
+Figure ‎0-12 prices page. 
+
 In Figure ‎0-12 we can see the pricing page and what each tier and the offers it have if we click on read details, we can see more information about the price tier.
