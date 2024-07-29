@@ -1,0 +1,384 @@
+<!-- This is the Home Page of Safer-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Links To All Style Files -->
+    <link rel="stylesheet" href="./main.css" id="dark">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/services.css">
+    <link rel="stylesheet" href="./styles/feedback-section.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Safer | Everyday Adventures</title>
+    
+</head>
+<body>  
+    <style>
+                .modal{
+            max-height: 50vh;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            background-color: var(--background-dark);
+            padding:2rem;
+            border-radius: 2rem;
+            border:none;
+            border:2px solid var(--background-light);
+            /* overflow-y: hidden; */
+        }
+
+        .modal::backdrop{
+            background:#0008;
+        }
+        .modal::-webkit-scrollbar{
+            width:0.5em;
+        }
+        .modal::-webkit-scrollbar-track{
+            background-color: transparent !important;
+            margin-block: 3em;
+            /* border: 20px solid transparent; */
+            background-clip: content-box;
+        }
+        .modal::-webkit-scrollbar-thumb{
+            background-color: var(--background-light);
+            border-radius: 50px;
+            border:4px solid transparent !important;
+        }
+
+        .modal h3{
+            margin-bottom: 2rem;
+        }
+        .modal h3 span{
+            font-size: 1rem;
+            color:var(--highlight);
+            text-transform: normalize;
+        }
+        .modal h5{
+            color:var(--primary);
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        .modal p{
+            margin-bottom: 2rem;
+            font-size: var(--nav-link);
+        }
+    </style>
+    <header>
+        <nav class="container">
+            <img src="/img/Safer logo.png" alt="Safer logo"></img>
+            <ul>
+                <li><a href="/"><img src="/img/Home.png" alt="Home icon"></a></li>
+                <li><a href="/destination.html"><img src="/img/Book.png" alt="Book icon"></a></li>
+                <li><a href="/feedback.html"><img src="/img/feedback.png" alt="Feedback icon"></a></li>
+                <li><a href="/prices.html"><img src="/img/Payment.png" alt="Payment icon"></a></li>
+            </ul>
+            <div id="login-container">
+                <a href="./login.html" id="loginBtn"><img src="/img/Login.png" alt="Login icon"></a>
+                <div style="display: none;">
+                    <a href='./checkout.html'><i class="fa-solid fa-cart-shopping" style="margin-right:1rem"></i></a>
+                    <a href="/" id="logout-btn" class='btn-small' style='border-radius:50px;color:var(--white)'>Log Out</a>
+                    
+                </div>  
+                <div id="toggle">
+                    <br>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>     
+            </div>
+            
+            <div class="responsive-nav">
+                <i class="fa-solid fa-bars" style="color:var(--white-light)"></i>
+                <div class="responsive-nav-content">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/destination.html">Destination</a></li>
+                        <li><a href="/feedback.html">Feedback</a></li>
+                        <li><a href="/prices.html">Pricing</a></li>
+                    </ul>
+                    
+                    <div id="login-container">
+                        <a href="./login.html" id="loginBtn"><i class="fa-solid fa-user" id="login-btn"></i></a>
+                        <div style="display: none;">
+                            <a href='./checkout.html'><i class="fa-solid fa-cart-shopping" style="margin-right:1rem"></i></a>
+                            <a href="/" id="logout-btn" class='btn-small' style='border-radius:50px;color:var(--white)'>Log Out</a>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <button id="chatbot-toggle-btn"><img src="/img/chatbot.png" width="50px" height="50px" alt="buttonpng" /></button>
+    <div class="chatbot-popup" id="chatbot-popup">
+        <div class="chat-header">
+            <span>Chatbot | <a href="https://www.thecodinghubs.com/" target="_blank">Here to assist you</a></span>
+            <button id="close-btn">&times;</button>
+        </div>
+        <div class="chat-box" id="chat-box"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type a message..." value="assist">
+            <button id="send-btn">Send</button>
+        </div>
+        <div class="copyright">
+            <a  href="https://www.thecodinghubs.com/" target="_blank">Safer chat-box © 2024</a>
+        </div>
+    </div>
+<script src="chat.js"></script>
+
+        <section class="container hero-section fade-in">
+           <div class="hero-content-container">
+            <div class="hero-content">
+                <h1>World wide <span style="color:var(--highlight)">Trip!</span></h1>
+                <p>Safer is a good day for traveling, book a ticket now with professionals.</p>            </div>
+            <!-- <div class="searchbox">
+                <input id="search" type="text" placeholder="Enter Location">
+                <button id="search-btn" class="btn">Search</button>
+            </div> -->
+           </div> 
+           <div class="hero-image-container">
+            <img src="./assets/Hero Image.png" alt="Hero Image">
+           </div>
+           
+        </section>
+        <section class="background-dark fade-in">
+            <section class="container services">
+                <div class="services-cards">
+                    <div class="card service large-card">
+                        <div class="service-img-container">
+                            <i class="fa-solid fa-map"><i class="fa-solid fa-location-dot" style="color:var(--primary)"></i></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Lot of Choices</h4>
+                            <p>Amazing place? We will give you the best choice!</p>
+                        </div>
+                    </div>
+                    <div class="card service">
+                        <div class="service-img-container">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Easy Booking</h4>
+                            <p>Payment is simple, and  you'll get your ticket quickly!</p>
+                        </div>
+                    </div>
+                    <div class="card service">
+                        <div class="service-img-container">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Best Tour Guide</h4>
+                            <p>Our guide team will will make your trip as as comfortable</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-content ">
+                    <h3 class="highlight-circle">01</h3>
+                    <h2>Our Services</h2>
+                    <p>Safer is a service for booking hotels, air tickets and other travel services for professionals</p>
+                    <button class="btn open-button">Read Details</button>
+                    <dialog class="modal">
+                    <h3>our<span>services</span></h3>
+                </p>
+                <h5>Travel Planning</h5>
+                <p>Our expert travel website will work with you to create a customized itinerary that meets your unique needs and preferences. From booking flights and accommodations to arranging transportation and activities, we'll take care of every detail to ensure a seamless and enjoyable travel experience.
+
+                </p>
+                <h5>Travel Coordination</h5>
+                <p>We understand that unexpected events can arise while traveling, which is why our team is always available to assist with any issues that may arise. From lost luggage to flight delays, we'll work with you to resolve any problems quickly and efficiently.
+
+                </p>
+                <h5>Travel Documentation</h5>
+                <p>We'll handle all necessary travel documentation, including visa applications and passport processing, to ensure that your travel plans are smooth and stress-free.
+
+                </p>
+                
+                <h5>Travel Assistance</h5>
+                <p>Our team is available 24/7 to provide assistance with any travel-related issues that may arise. Whether you need help with language translation or medical assistance, we're always here to help.
+
+                </p>
+           
+                <h5>Personalized Travel Concierge</h5>
+                <p>We offer personalized travel concierge services to help you make the most of your travels. From restaurant reservations to sightseeing recommendations, our expert team will help you plan every detail of your trip.
+
+                </p>
+                <h5>Real-time Travel Updates</h5>
+                <p>Stay informed about any changes or disruptions to your travel plans with our real-time updates service. From flight delays to weather alerts, we'll keep you informed and up-to-date throughout your journey.
+                    </p>
+                    <h5>Help</h5>
+                    <p>If you need help feal free to chat with our <span style="color:yellow;">chatbot</span> or for more instructions chat <span style="color: greenyellow;">+96171836897 </span>on Whatsapp</p>
+                    <button class="btn-small close-modal"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                    </dialog>
+                    <script>
+                        // Write all you JS code below
+                        let openButtons= Array.from(document.querySelectorAll('.open-button'));
+                        let closeButtons= Array.from(document.querySelectorAll('.close-modal'));
+                        let modals=Array.from(document.querySelectorAll('.modal'));
+                    
+                        for(let i=0;i<openButtons.length;i++){
+                            openButtons[i].addEventListener('click',()=>{
+                                modals[i].showModal();
+                            })
+                        }
+                        for(let i=0;i<closeButtons.length;i++){
+                            closeButtons[i].addEventListener('click',()=>{
+                                modals[i].close();
+                            })
+                        }
+                        
+                    </script>
+                </div>
+            </section>
+            <section class="container packages fade-in">
+                <div class="packages-content">
+                    <h3 class="highlight-circle">02</h3>
+                    <h2>Special Package</h2>
+                    <p>Safer is a service for booking hotels, air tickets and other travel services for professionals</p>
+                    <button class="btn" id="packageBtn">Learn More</button>
+                </div>
+                <div class="packages-cards">
+                    <div class="card package-card"> 
+                        <div class="package-card-img">
+                            <img src="https://images.unsplash.com/photo-1592835978338-6b7b07592dfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1192&q=80" alt="Mumbai Image">
+                        </div>                       <div class="package-card-content">
+                            <h4>Mumbai</h4>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <div class="large-card package-card"> 
+                        <div class="package-card-img">
+                            <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NjE5NTF8MHwxfHNlYXJjaHwxfHxBbXN0ZXJkYW18ZW58MHx8fHwxNjg5ODM5MTUwfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Amsterdam Image">
+                        </div>                       <div class="package-card-content">
+                            <h4>Amsterdam</h4>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>Netherlands</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="container feedback-section fade-in">
+            <div class="feedback-details">
+                <h3 class="highlight-circle">03</h3>
+                <div>
+                    <h2>Full Featured on with more than 200,000 users</h2>
+                    <button class="btn" id="feedbackBtn">View All</button>
+                </div>
+            </div>
+            <div class="offers">
+                 <h1><span style="color:var(--highlight)">Exclusive</span></h>
+                <h3><span>$1099</span>/pack</h3>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i> President suite room</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Free breakfast and lunch</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Free pick up</li>
+                </ul><img src="/img/image 1.png" alt="Seconday Hero Image">
+
+                 
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="articles"></section>
+        <div class="container">
+            <h1>Get started and early <span>Update</span> about our package</h1>
+            <!-- Copy this searchbox If you want to use it somewhere else -->
+            
+            
+            <hr>
+            <div class="footer">
+                <img src="/img/Safer logo.png" alt="Safer Logo">
+                
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/destination.html">Destination</a></li>
+                    <li><a href="/feedback.html">Feedback</a></li>
+                    <li><a href="/prices.html">Pricing</a></li>
+                </ul>
+                <p><i class="fa-regular fa-copyright"></i> 2024 Safer</p>
+            </div>
+            <div class="socials">
+                <div class="social">
+                    <a href="https://www.instagram.com/traveling_with_safer?igsh=MWxxYzhmYW50NWc5Yw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="social">
+                    <a href="/whatsapp.html"><img src="/img/whatsapp.png" alt="Payment icon" hight="18px" width="18px"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="main.js"></script>
+<script>
+let packageBtn = document.getElementById("packageBtn");
+let feedbackBtn = document.getElementById("feedbackBtn");
+let noway = document.getElementById("noway");
+let offer = document.getElementById("offer");
+let ourservices = document.getElementById("ourservices");
+
+
+
+
+packageBtn.addEventListener("click", () => {
+// console.log(packageBtn);
+window.location.href="destination.html";
+});
+ourservices.addEventListener("click", () => {
+window.location.href="our services.html";
+});
+feedbackBtn.addEventListener("click", () => {
+window.location.href="feedback.html";
+});
+noway.addEventListener("click", () => {
+window.location.href="noway.html";
+});
+offer.addEventListener("click", () => {
+window.location.href="prices.html";
+});
+
+
+
+
+
+
+
+
+// function checkMode(){
+//   mode = getCookie("isDark");
+//   if(mode != ""){
+//     if(mode == true){
+//       document.body.classList.add('light-mode');
+//     }
+//     if(mode == false){
+//       document.body.classList.remove('light-mode');
+//     }
+//   }
+// }
+
+</script>

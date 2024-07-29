@@ -1,0 +1,149 @@
+<!-- This is the Home Page of Safer-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="/img/Safer logo.png">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Links To All Style Files -->
+    <link rel="stylesheet" href="./main.css" id="dark">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/services.css">
+    <link rel="stylesheet" href="./styles/feedback-section.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Safer | Whatsapp Form</title>
+    
+</head>
+<body>  
+    <header>
+        <nav class="container">
+            <img src="/img/Safer logo.png" alt="Safer logo"></img>
+            <ul>
+                <li><a href="/"><img src="/img/Home.png" alt="Home icon"></a></li>
+            </ul>                 
+                <div id="toggle" style="margin-right: 50px;">
+                    <br>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>     
+            </div>
+            
+            <div class="responsive-nav">
+                        <li><a href="/"><img src="/img/Home.png" alt="Home icon"></a></li>   
+                </div>
+            
+        </nav>
+    </header>
+    <form onsubmit="sendwhatsapp();" >
+      <h2 style="margin-left: 20px; color: #f9d402 ;">WhatsApp</h2>
+      <label for="" style="margin-left: 20px;">Name</label>
+      <input required="text" type="text" class="name"style="margin-left: 20px;" placeholder=" enter your name">
+
+      <label for=""style="margin-left: 20px;">Email</label>
+      <input required="text" class="email"style="margin-left: 20px;"placeholder=" enter your email">
+
+      <label for=""style="margin-left: 20px;">Country</label>
+      <input required="text" type="text" class="country"style="margin-left: 20px;"placeholder=" enter your country">
+
+      <label for=""style="margin-left: 20px;">Message</label>
+      <textarea required="text" class="message"style="margin-left: 20px;"placeholder=" enter your message "></textarea>
+      <button  type="submit"  style="border-radius:15px; margin-left: 20px;" >Send Via WhatsApp</button>
+    </form>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        margin: 0;
+      }
+      form{ 
+        
+        display: flex;
+        flex-direction: column;
+        margin: 15px 5px;
+        width: 500px;
+        font-size: 16px;
+      }
+      form h1{
+        text-align: center;
+      }
+      form label{
+        display: block;
+        margin-bottom: 5px;
+      }
+      form input, form textarea{
+        width: 70%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        display: flex;
+        border-radius: 10px;
+        resize: vertical;
+      }
+      form button{
+        background: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        margin-top: 5px;
+        border: none;
+        cursor: pointer;
+        width: 200px;
+      }
+      form button:hover{
+        background: green;
+      }
+    </style>  
+
+    <script>
+      function sendwhatsapp(){
+       var phonenumber = "+96176624296";
+
+       var name = document.querySelector(".name").value;
+       var email = document.querySelector(".email").value;
+       var country = document.querySelector(".country").value;
+       var message = document.querySelector(".message").value;
+       var url = "https://wa.me/" + phonenumber + "?text="
+       +"*Name :* "+name+"%0a"
+       +"*Email :* "+email+"%0a"
+       +"*Country :* "+country+"%0a"
+       +"*Message :* "+message;
+       window.open(url, '_blank').focus();
+       
+     }
+    </script>
+    <footer>
+        
+        <div class="container">
+            <div class="footer">
+                <img src="/img/Safer logo.png" alt="Safer Logo">
+                
+                <ul>
+                    <li><a href="/">Home</a></li>
+                </ul>
+                <p><i class="fa-regular fa-copyright"></i> 2024 Safer</p>
+            </div>
+            <div class="socials">
+                <div class="social">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+  
