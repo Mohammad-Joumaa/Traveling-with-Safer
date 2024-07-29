@@ -7,7 +7,6 @@ The first topic to cover is the programming languages used, Json databases.
 
 •	Database: 
 -	JSON Database: it is the main and only local database we used to store our data in like the destinations, feedbacks and users with their information.
-in like the destinations, feedbacks and users with their information.
  
 Figure ‎0-1 The header Safer website.
 
@@ -64,7 +63,7 @@ Figure ‎0-9 The panel that the information of the country appears in.
 
 Figure ‎0-10 The costumers feedback page.
 
-In Figure ‎0-10 we can see the feedback page here appears the feedback of the costumers with the rating that they can give by filling the form in Figure ‎0-11 left fide after they submit the feedback it appears in the feedbacks page Figure ‎0-10 and the feedback will be sent to the admin by email, the form will be received by the admin the form in Figure ‎0-11 in the right side. The email form will be verified by reCAPTCHA to prevent spams. Note: the feedback will not be posted on the website if the user is not logged in.
+In Figure ‎0-10 we can see the feedback page here appears the feedback of the costumers with the rating that they can give by filling the form in Figure ‎0-11 left side after they submit the feedback it appears in the feedbacks page Figure ‎0-10 and the feedback will be sent to the admin by email, the form will be received by the admin the form in Figure ‎0-11 in the right side. The email form will be verified by reCAPTCHA to prevent spams. Note: the feedback will not be posted on the website if the user is not logged in.
 
  ![image](https://github.com/user-attachments/assets/5ec1b584-adc5-43d1-a955-042f642438f9)
 
