@@ -15,6 +15,7 @@ This is the header (top) of our website in all the pages the icons let us shuffl
 we will not be including it in the rest of the pictures but it is there.
 
    ![image](https://github.com/user-attachments/assets/9370ccc3-2e33-43ff-ac8c-1df539e7e6fb)
+   
                              |Figure 0-2 The head of the home page|
 
 
