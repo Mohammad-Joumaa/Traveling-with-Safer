@@ -15,12 +15,14 @@ we will not be including it in the rest of the pictures but it is there.
 
  
 Figure ‎0-2 The head of the home page. 
+
 ![image](https://github.com/user-attachments/assets/bb497ca7-7b8f-4be5-9e10-452773a104f9)
 
 At first page Figure ‎0-2 is the home page in here we have the face of the website here we can switch between the pages using thew icons in the top of the page, From the destinations to the log in and other pages we can also choose between light and dark modes.
 
  
 Figure ‎0-3 part of the home page body.
+
 ![image](https://github.com/user-attachments/assets/0eab9d32-a96a-414c-9a62-40da47bf3b9a)
 
 In Figure ‎0-3 the home page we can scroll down to see information about the website here we can see our services we push read details to see the services that our website offer see Figure ‎0-4 we can scroll down also in here to see all details and information about Safer website.
@@ -30,11 +32,13 @@ In Figure ‎0-3 the home page we can scroll down to see information about the w
 Figure ‎0-4 When push read details button, our services.
 
 ![image](https://github.com/user-attachments/assets/ffa92376-b8a2-4120-8ce0-be9cd9e50f2f)  
+
 Figure ‎0-5 part of the home page body.
 
 In Figure ‎0-5 we can see the offers and packages that our website offers and you can navigate to the destination page by clicking on Learn more button.
 
  ![image](https://github.com/user-attachments/assets/4dd8dd4e-08f3-4739-8069-ca101dbc18c5)
+
 Figure ‎0-6 The footer of Safer website.
 
 In Figure ‎0-6 we can see the footer of our website in here you can access our Instagram page. Facebook, twitter and you can contact us on a WhatsApp form in Figure ‎0-7 the form will direct you to our help and support number that the message will be written by default. Note: the footer is common in all the pages so we will not be including more pictures of it. 
